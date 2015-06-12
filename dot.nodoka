@@ -16,3 +16,4 @@ key S-F1= &DescribeBindings
 
 window Chrome /Chrome\.exe/ : EmacsEdit
 window Console /ConsoleWindowClass/ : EmacsEdit
+window Explorer /Explorer\.exe/ : EmacsEdit
