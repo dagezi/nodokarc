@@ -9,6 +9,10 @@ include "109.nodoka"
 include "104on109.nodoka"
 include "default2.nodoka"
 
+def option sts4nodoka = enable
+
+include "thumbsense.nodoka"
+
 keymap Global
 
 key C-A-D = &DescribeBindings
