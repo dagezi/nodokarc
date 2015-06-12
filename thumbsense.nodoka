@@ -2,14 +2,14 @@
 # modified by dagezi
 
 # F,J,Space を左ボタンのクリックに割り当てる。
-  key TS-*F TS-*J TS-*Space = &VK(LButton)
+  key T-*F T-*J T-*Space = &VK(LButton)
 # クリックがリピートされるのを防ぐ
-  key D-R-TS-*F D-R-TS-*J D-R-TS-*Space = &Ignore
+  key D-R-T-*F D-R-T-*J D-R-TS-*Space = &Ignore
 
 # D,K を右ボタンのクリックに割り当てる。
-  key TS-*D TS-*K = &VK(RButton)
+  key T-*D T-*K = &VK(RButton)
 # クリックがリピートされるのを防ぐ
-  key D-R-TS-*D D-R-TS-*K = &Ignore
+  key D-R-T-*D D-R-T-*K = &Ignore
 
 # V を左ボタンのダブルクリックに割り当てる。
   key D-T-*V = &VK(LButton) &Wait(10) &VK(LButton)
@@ -17,34 +17,31 @@
   key D-R-T-*V U-T-*V = &Ignore
 
 # G を第4ボタンのクリックに割り当てる。
-  key TS-*G = &VK(XButton1)
+  key T-*G = &VK(XButton1)
 # クリックがリピートされるのを防ぐ
-  key D-R-TS-*G = &Ignore
+  key D-R-T-*G = &Ignore
 
 # H を第5ボタンのクリックに割り当てる。
-  key TS-*H = &VK(XButton2)
+  key T-*H = &VK(XButton2)
 # クリックがリピートされるのを防ぐ
-  key D-R-TS-*H = &Ignore
+  key D-R-T-*H = &Ignore
 
 # S,L を押しながらの上下方向ドラッグをホイール回転にする。
-  key D-TS-*S D-TS-*L = &MouseHook(Wheel, -5)
+  key D-T-*S D-TS-*L = &MouseHook(Wheel, -5)
 # リピートは無視。
-  key D-R-TS-*S D-R-TS-*L = &Ignore
+  key D-R-T-*S D-R-TS-*L = &Ignore
 # キーを離したら解除する。
-  key U-TS-*S U-TS-*L = &MouseHook(None, 0)
+  key U-T-*S U-T-*L = &MouseHook(None, 0)
 
 # A を押しながらドラッグするとアクティブウィンドウが移動する。
-  key D-TS-*A = &MouseHook(WindowMove, 1)
+  key D-T-*A = &MouseHook(WindowMove, 1)
 # リピートは無視。
-  key D-R-TS-*A = &Ignore
+  key D-R-T-*A = &Ignore
 # キーを離したら解除する。
-  key U-TS-*A = &MouseHook(None, 0)
+  key U-T-*A = &MouseHook(None, 0)
 
 # R でウィンドウの最大化/解除をトグルする。
   key T-R = &WindowMaximize
-
-# W,B でウィンドウを閉じる。
-  key T-W T-B = &WindowClose
 
 # C を中ボタンのクリックに割り当てる。
 #  key TS-*C = &VK(MButton)
