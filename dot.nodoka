@@ -13,18 +13,21 @@ def option sts4nodoka = enable
 
 include "thumbsense.nodoka"
 
+keymap MyEmacsEdit : EmacsEdit
+key C-U = &Default
+
 keymap Global
 
 key C-A-D = &DescribeBindings
 key S-F1= &DescribeBindings
 
-window Chrome /Chrome\.exe/ : EmacsEdit
-window Console /ConsoleWindowClass/ : EmacsEdit
-window Explorer /Explorer\.exe/ : EmacsEdit
-window Firefox /firefox\.exe/ : EmacsEdit
-window Skype /skype\.exe/ : EmacsEdit
+window Chrome /Chrome\.exe/ : MyEmacsEdit
+window Console /ConsoleWindowClass/ : MyEmacsEdit
+window Explorer /Explorer\.exe/ : MyEmacsEdit
+window Firefox /firefox\.exe/ : MyEmacsEdit
+window Skype /skype\.exe/ : MyEmacsEdit
 
 # CLASS: C:\WINDOWS\system32\ApplicationFrameHost.exe:ApplicationFrameWindow:ApplicationFrameInputSinkWindow
 # TITLE:	C:\WINDOWS\system32\ApplicationFrameHost.exe:github ubuntu - Bing ?- Microsoft Edge:
 
-window Edge /ApplicationFrameHost\.exe/ : EmacsEdit
+window Edge /ApplicationFrameHost\.exe/ : MyEmacsEdit
