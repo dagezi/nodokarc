@@ -22,3 +22,9 @@ window Chrome /Chrome\.exe/ : EmacsEdit
 window Console /ConsoleWindowClass/ : EmacsEdit
 window Explorer /Explorer\.exe/ : EmacsEdit
 window Firefox /firefox\.exe/ : EmacsEdit
+window Skype /skype\.exe/ : EmacsEdit
+
+# CLASS: C:\WINDOWS\system32\ApplicationFrameHost.exe:ApplicationFrameWindow:ApplicationFrameInputSinkWindow
+# TITLE:	C:\WINDOWS\system32\ApplicationFrameHost.exe:github ubuntu - Bing ?- Microsoft Edge:
+
+window Edge /ApplicationFrameHost\.exe/ : EmacsEdit
